@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    outline:none;
+    color: #0196e3;
+}
+
+body {
+    color: #444444;
+    background: #f2f2f2;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 920px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+header {
+    font-weight: normal;
+    padding: 35px;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header > h2 {
+    font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: 16px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    border: 1px solid white;
+    box-shadow: 0 0 3px #AAAAAA;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.gallery > .window {
+    overflow: hidden;
+
+}
+
+.gallery > .window > .pictures {
+    display: flex;
+    align-items: center;
+}
+
+.gallery > .icon > ul {
+    list-style: none;
+    background-image: url('../images/panel.jpg');
+}
+
+.gallery > .icon > ul > li {
+    display: inline-block;
+    background: url('../images/divider.png') no-repeat right;
+}
+
+.gallery > .icon > ul > li:first-child{
+    background: url('../images/divider.png') no-repeat left, url('../images/divider.png') no-repeat right;
+}
+
+.gallery > .icon > ul > li > a {
+    display: block;
+    width: 60px;
+    height: 45px;
+    padding-top: 10px;
+
+}
+
+.gallery > .icon > ul > li > a > img {
+    vertical-align: top;
+}
+
+.gallery > .icon > ul > li.active {
+    background: url('../images/active_bg.png');
+}
+
+footer > p {
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p:nth-child(2) {
+    font-size: 10px;
+}
+
+
